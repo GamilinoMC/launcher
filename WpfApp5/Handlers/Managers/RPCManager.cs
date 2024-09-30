@@ -165,6 +165,13 @@ namespace Flarial.Launcher.Managers
                         largeImageKey = "zeqamc",
                         Detail = "Zeqa Network"
                     };
+                case string _ when ip.Contains("lydox"):
+                    return new serverInformation()
+                    {
+                        ipAddress = ip,
+                        largeImageKey = "lydoxmc",
+                        Detail = "LydoxMC"
+                    };
                 case "none":
                     return new serverInformation()
                     {
